@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyLoxyApp</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="save_button">Save</string>
+    <string name="login_email_hint">Login/Email</string>
+    <string name="app_name_hint">App Name</string>
+    <string name="alias_hint">Alias</string>
+    <string name="alias">Alias</string>
+    <string name="add_credentials_button">Add Credentials</string>
+    <string name="view_saved_credentials_button">View Saved Credentials</string>
+    <string name="search_hint">Search by app name</string>
+    <string name="logout_button">Logout</string>
+
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:background="#EDEDED">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/dashboardLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:contentDescription="App Logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcomeDashboardTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Your LOXY Dashboard"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#5E498B"
+        app:layout_constraintTop_toBottomOf="@id/dashboardLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add Credentials Button -->
+    <Button
+        android:id="@+id/addCredentialsButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_credentials_button"
+        android:backgroundTint="#E91E63"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/welcomeDashboardTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <!-- View Saved Credentials Button -->
+    <Button
+        android:id="@+id/viewSavedCredentialsButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/view_saved_credentials_button"
+        android:backgroundTint="#673AB7"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/addCredentialsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/logout_button"
+        android:backgroundTint="#9E9E9E"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/viewSavedCredentialsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

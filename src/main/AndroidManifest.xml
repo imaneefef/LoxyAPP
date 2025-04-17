@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myloxyapp">
+
+    <!--    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+
+      -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"> <!-- Fixed theme to be compatible with AppCompat -->
+
+        <!-- Main Activity -->
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Sign In Activity  -->
+
+        <activity android:name=".SignInActivity" />
+
+        <!-- Sign Up Activity -->
+        <activity android:name=".SignUpActivity" />
+
+        <!-- Add Credentials Activity -->
+        <activity android:name=".AddCredentialsActivity" android:exported="true" />
+
+        <!-- View Saved Credentials Activity -->
+        <activity android:name=".ViewSavedCredentialsActivity" android:exported="true" />
+
+        <!-- Dashboard Activity -->
+        <activity android:name=".DashboardActivity" android:exported="true" />
+
+        <!--      <service
+            android:name=".ShakeService"
+            android:exported="false"/>/>
+
+          -->
+    </application>
+
+</manifest>
